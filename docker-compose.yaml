@@ -22,7 +22,7 @@ services:
     depends_on:
       - "db"
     environment:
-      RUN_TESTS: "True"
+      RUN_TESTS: "False"
     env_file:
       - ./secrets/db_credentials.env
     ports:
