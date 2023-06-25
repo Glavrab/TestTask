@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "test-task"
+version = "0.1.0"
+description = ""
+authors = ["alexey <alexey.baranov@vicuesoft.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.98.0"
+asyncpg = "^0.27.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.16"}
+loguru = "^0.7.0"
+uvicorn = "^0.22.0"
+psycopg2-binary = "^2.9.6"
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.11.1"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+httpx = "^0.24.1"
+isort = "^5.12.0"
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
